@@ -14,26 +14,37 @@ import { Fragment } from 'react';
 
 export default function Navbar() {
 	return (
-		<nav className='flex h-1/3 items-center justify-between w-[90%] pt-5 px-20 text-xl font-bold text-white'>
-			<Image
-				alt='Logo'
-				height={80}
-				src='/images/logo.png'
-				width={80}
-			/>
+		<nav className='flex h-1/3 w-[90%] items-center justify-between px-20 pt-5 text-xl font-bold text-white'>
+			<Link href='/'>
+				<Image
+					alt='Logo'
+					height={80}
+					src='/images/logo.png'
+					width={80}
+				/>
+			</Link>
 			<NavigationMenu>
 				<NavigationMenuList className='gap-8'>
 					<NavigationMenuItem>
 						<NavigationMenuTrigger>Services</NavigationMenuTrigger>
 						<NavigationMenuContent>
-                        <ul className="grid columns-2 gap-3 w-[400px]">
-                            {services.map((service: string) => (
-                                <li key={service} className="">
-                                    <NavigationMenuLink href={service.split(' ').join('-').toLowerCase()}>{service}</NavigationMenuLink>
-                                    <Separator className='w-[90%]' />
-                                </li>
-                            ))}
-                        </ul>
+							<ul className='grid w-[400px] grid-cols-2 gap-2 p-4 pr-0'>
+								{services.map((service: string, index: number) => {
+									const notLastRow = index < services.length - 2;
+
+									return (
+										<li key={service}>
+											<NavigationMenuLink
+												className={'hover:text-[#878787]'}
+												href={service.split(' ').join('-').toLowerCase()}
+											>
+												{service}
+											</NavigationMenuLink>
+											{notLastRow && <Separator className='mt-2 w-[90%]' />}
+										</li>
+									);
+								})}
+							</ul>
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 
