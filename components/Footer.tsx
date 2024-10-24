@@ -109,7 +109,7 @@ export default function Footer() {
 								placeholder='Message'
 							/>
 							<Button
-								className='hover:bg-navbar-button-gradient-hover h-12 border border-black bg-navbar-button-gradient text-black'
+								className='hover:bg-header-button-gradient-hover h-12 border border-black bg-header-button-gradient text-black'
 								type='submit'
 							>
 								Send Message

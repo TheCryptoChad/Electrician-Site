@@ -6,6 +6,17 @@ export const address = '1234 Electrician St.';
 
 export const companyName = 'Electrician Company LLC';
 
+export const services = [
+	'Service 1',
+	'Service 2',
+	'Service 3',
+	'Service 4',
+	'Service 5',
+	'Service 6',
+	'Service 7',
+	'Service 8',
+];
+
 export const socials = {
 	Instagram: 'https://www.instagram.com/',
 	Facebook: 'https://www.facebook.com/',

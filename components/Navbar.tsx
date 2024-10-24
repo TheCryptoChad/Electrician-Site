@@ -1,31 +1,83 @@
 import Link from 'next/link';
-import { Button } from './ui/button';
 import Image from 'next/image';
-import { phoneNumber } from '@/lib/constants';
+import {
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+} from './ui/navigation-menu';
+import { services } from '@/lib/constants';
+import { Separator } from './ui/separator';
+import { Fragment } from 'react';
 
 export default function Navbar() {
 	return (
-		<header className='flex h-[3.5rem] w-screen justify-around bg-navbar-gradient px-24'>
-			<div className='flex flex-1 items-center font-bold text-white transition-transform duration-300 hover:scale-110'>
-				Monday - Friday: 8:00 AM - 5:00 PM
-			</div>
-			<Link
-				className='flex flex-1 justify-end'
-				href={`tel:${phoneNumber}`}
-			>
-				<Button className='group h-full w-1/2 rounded-none bg-navbar-button-gradient text-2xl font-extrabold text-black hover:text-white'>
-					<>
-						<Image
-							alt='Phone'
-							className='duration-900 transition-transform group-hover:invert group-hover:filter'
-							height={40}
-							src='/icons/phone.svg'
-							width={40}
-						/>{' '}
-						{phoneNumber}
-					</>
-				</Button>
-			</Link>
-		</header>
+		<nav className='flex h-1/3 items-center justify-between w-[90%] pt-5 px-20 text-xl font-bold text-white'>
+			<Image
+				alt='Logo'
+				height={80}
+				src='/images/logo.png'
+				width={80}
+			/>
+			<NavigationMenu>
+				<NavigationMenuList className='gap-8'>
+					<NavigationMenuItem>
+						<NavigationMenuTrigger>Services</NavigationMenuTrigger>
+						<NavigationMenuContent>
+                        <ul className="grid columns-2 gap-3 w-[400px]">
+                            {services.map((service: string) => (
+                                <li key={service} className="">
+                                    <NavigationMenuLink href={service.split(' ').join('-').toLowerCase()}>{service}</NavigationMenuLink>
+                                    <Separator className='w-[90%]' />
+                                </li>
+                            ))}
+                        </ul>
+						</NavigationMenuContent>
+					</NavigationMenuItem>
+
+					<NavigationMenuItem>
+						<Link
+							href='/review'
+							legacyBehavior
+							passHref
+						>
+							<NavigationMenuLink>Review</NavigationMenuLink>
+						</Link>
+					</NavigationMenuItem>
+
+					<NavigationMenuItem>
+						<Link
+							href='/financing'
+							legacyBehavior
+							passHref
+						>
+							<NavigationMenuLink>Financing</NavigationMenuLink>
+						</Link>
+					</NavigationMenuItem>
+
+					<NavigationMenuItem>
+						<Link
+							href='/learning'
+							legacyBehavior
+							passHref
+						>
+							<NavigationMenuLink>Learning Hub</NavigationMenuLink>
+						</Link>
+					</NavigationMenuItem>
+
+					<NavigationMenuItem>
+						<Link
+							href='/contact'
+							legacyBehavior
+							passHref
+						>
+							<NavigationMenuLink>Contact Us</NavigationMenuLink>
+						</Link>
+					</NavigationMenuItem>
+				</NavigationMenuList>
+			</NavigationMenu>
+		</nav>
 	);
 }

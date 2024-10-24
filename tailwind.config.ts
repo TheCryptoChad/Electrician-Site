@@ -10,9 +10,9 @@ const config: Config = {
   theme: {
   	extend: {
 		backgroundImage: {
-			'navbar-gradient': 'linear-gradient(90deg, #13192C 0%, rgba(116, 207, 0, 0.770833) 0.01%, #13192C 0.02%, #505D84 58.18%, #13192C 78.66%)',
-			'navbar-button-gradient': 'linear-gradient(87.06deg, #F8D7A7 0%, #E3C08C 51.09%, #CFAA73 99.37%)',
-			'navbar-button-gradient-hover': 'linear-gradient(87.06deg, #E0BF8F 0%, #D5B27E 51.09%, #C6A16A 99.37%)',
+			'header-gradient': 'linear-gradient(90deg, #13192C 0%, rgba(116, 207, 0, 0.770833) 0.01%, #13192C 0.02%, #505D84 58.18%, #13192C 78.66%)',
+			'header-button-gradient': 'linear-gradient(87.06deg, #F8D7A7 0%, #E3C08C 51.09%, #CFAA73 99.37%)',
+			'header-button-gradient-hover': 'linear-gradient(87.06deg, #E0BF8F 0%, #D5B27E 51.09%, #C6A16A 99.37%)',
 			'highlighted-gradient': 'linear-gradient(89.7deg, #EC4F42 0.24%, #E22C58 99.74%)'
 		},
   		colors: {
