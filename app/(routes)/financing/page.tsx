@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 export default function Page() {
 	return (
-		<main className='flex h-screen flex-col items-center justify-center py-20'>
-			<section className='relative flex w-1/4 flex-col gap-5 rounded-md border bg-white px-8 pb-10 pt-4 shadow-lg'>
+		<section className='flex h-screen flex-col items-center justify-center py-20'>
+			<div className='relative flex w-1/4 flex-col gap-5 rounded-md border bg-white px-8 pb-10 pt-4 shadow-lg'>
 				<h1 className='text-center text-2xl font-bold'>Financing Calculator</h1>
 				<div className='flex flex-col gap-4 text-lg'>
 					<div className='grid w-full max-w-sm items-center gap-2'>
@@ -55,7 +55,7 @@ export default function Page() {
 						Get Financing Options
 					</Button>
 				</Link>
-			</section>
-		</main>
+			</div>
+		</section>
 	);
 }

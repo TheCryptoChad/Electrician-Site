@@ -5,6 +5,7 @@ import { Separator } from './ui/separator';
 import { address, companyName, email, phoneNumber, socials } from '@/lib/constants';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
+import ContactForm from './ContactForm';
 
 export default function Footer() {
 	return (
@@ -72,50 +73,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className='flex h-[61%] flex-col gap-5 rounded-3xl bg-white px-8 pt-8 lg:w-1/4'>
-						<h2 className='text-3xl font-extrabold'>Drop us a line</h2>
-						<form
-							action={`https://formsubmit.co/${email}`}
-							className='flex w-full flex-col gap-4'
-							method='POST'
-						>
-							<div className='flex gap-2'>
-								<Input
-									placeholder='First Name'
-									required
-									type='text'
-								/>
-								<Input
-									placeholder='Last Name'
-									required
-									type='text'
-								/>
-							</div>
-							<div className='flex gap-2'>
-								<Input
-									placeholder='Phone'
-									required
-									type='phone'
-								/>
-								<Input
-									placeholder='Email'
-									required
-									type='tel'
-								/>
-							</div>
-							<Textarea
-								className='resize-none'
-								required
-								placeholder='Message'
-							/>
-							<Button
-								className='hover:bg-header-button-gradient-hover h-12 border border-black bg-header-button-gradient text-black'
-								type='submit'
-							>
-								Send Message
-							</Button>
-						</form>
-					</div>
+					<ContactForm />
 				</div>
 
 				<div className='flex w-full items-center justify-evenly'>

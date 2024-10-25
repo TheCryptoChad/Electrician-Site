@@ -50,11 +50,11 @@ export default function Navbar() {
 
 					<NavigationMenuItem>
 						<Link
-							href='/review'
+							href='/reviews'
 							legacyBehavior
 							passHref
 						>
-							<NavigationMenuLink>Review</NavigationMenuLink>
+							<NavigationMenuLink>Reviews</NavigationMenuLink>
 						</Link>
 					</NavigationMenuItem>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
 
 					<NavigationMenuItem>
 						<Link
-							href='/learning'
+							href='/learning-hub'
 							legacyBehavior
 							passHref
 						>
@@ -80,7 +80,7 @@ export default function Navbar() {
 
 					<NavigationMenuItem>
 						<Link
-							href='/contact'
+							href='/contact-us'
 							legacyBehavior
 							passHref
 						>

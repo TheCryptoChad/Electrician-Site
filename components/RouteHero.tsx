@@ -15,7 +15,7 @@ import {
 
 export default function RouteHero() {
 	const path = usePathname();
-	const route = path.slice(1).charAt(0).toUpperCase() + path.slice(2);
+	const route = path.slice(1).split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
 	return (
 		<section className='relative flex h-1/2 w-screen flex-col items-center gap-8'>
