@@ -9,7 +9,7 @@ export default function HomeHero() {
 	return (
 		<section className='relative flex w-screen flex-col items-center gap-8 pb-32'>
 			<Image
-				alt='Footer'
+				alt='Hero'
 				className='absolute -z-10 flex size-full items-center justify-center'
 				height={50}
 				src='/images/home-hero.jpg'

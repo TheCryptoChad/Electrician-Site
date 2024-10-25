@@ -1,11 +1,14 @@
+import RouteHero from '@/components/RouteHero';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
+import Link from 'next/link';
 
-export default function Financing() {
+export default function Page() {
 	return (
-		<main className='flex items-center justify-center py-20'>
-			<section className='flex flex-col gap-5 rounded-md bg-white px-8 pt-4 shadow-md'>
+		<main className='flex h-screen flex-col items-center justify-center py-20'>
+			<section className='relative flex w-1/4 flex-col gap-5 rounded-md border bg-white px-8 pb-10 pt-4 shadow-lg'>
 				<h1 className='text-center text-2xl font-bold'>Financing Calculator</h1>
 				<div className='flex flex-col gap-4 text-lg'>
 					<div className='grid w-full max-w-sm items-center gap-2'>
@@ -33,7 +36,7 @@ export default function Financing() {
 						<span className='text-2xl font-extrabold'>$257.87</span> /mo.
 					</h2>
 				</div>
-				<div className='gird-cols-3 grid gap-y-2 gap-x-4 rounded bg-gray-200 p-2 text-sm'>
+				<div className='gird-cols-3 grid gap-x-4 gap-y-2 rounded bg-gray-200 p-2 text-sm'>
 					<p className='col-span-2'>Principal</p>
 					<p className='text-end'>$12,000.00</p>
 					<p className='col-span-2'>Interest</p>
@@ -42,8 +45,16 @@ export default function Financing() {
 					<p className='col-span-2 font-bold'>Total Loan Cost Estimate</p>
 					<p className='text-end font-bold'>$15,472.04</p>
 				</div>
-                <p className='font-bold text-sm'>Get your personalized rates.</p>
-                <p className='text-justify text-sm'>This takes two minutes and does not affect your credit score.</p>
+				<p className='text-sm font-bold'>Get your personalized rates.</p>
+				<p className='text-justify text-sm'>This takes two minutes and does not affect your credit score.</p>
+				<Link
+					className='absolute -bottom-6 left-0 flex w-full justify-center'
+					href='/contact-us'
+				>
+					<Button className='bg-header-button-gradient h-12 w-[80%] rounded-lg text-lg font-bold transition-transform duration-300 hover:scale-110'>
+						Get Financing Options
+					</Button>
+				</Link>
 			</section>
 		</main>
 	);
