@@ -7,7 +7,7 @@ import Image from 'next/image';
 type Props = {
 	title: string;
 	description: string;
-	images: string[];
+	images: readonly string[];
 	cost: string;
 	time: string;
 	type: string;

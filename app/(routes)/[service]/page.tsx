@@ -1,8 +1,9 @@
+import { PageProps } from '@/.next/types/app/page';
 import { servicePages } from '@/lib/constants';
 
-type Props = {
+type Props = PageProps & {
 	params: {
-		service: keyof typeof servicePages;
+		service: string;
 	};
 };
 
