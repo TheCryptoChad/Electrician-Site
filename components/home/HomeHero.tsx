@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Navbar from './Navbar';
 import Image from 'next/image';
-import { Separator } from './ui/separator';
-import { Button } from './ui/button';
+import Navbar from '../Navbar';
+import { Separator } from '../ui/separator';
+import { Button } from '../ui/button';
 import { phoneNumber } from '@/lib/constants';
 
 export default function HomeHero() {
