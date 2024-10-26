@@ -44,7 +44,58 @@ export const serviceDetails = {
 		type: 'Type 1',
 		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
 	}
-}
+} as const;
+
+export const servicePages = {
+	'Service 1': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 2': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 3': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 4': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 5': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 6': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 7': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+	'Service 8': {
+		description: 'lorem ipsum',
+		specializations: ['Specialization 1', 'Specialization 2', 'Specialization 3', 'Specialization 4'],
+		benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
+		contractorDescription: 'This is a description of the contractor.',
+	},
+} as const;
 
 export const socials = {
 	Instagram: 'https://www.instagram.com/',

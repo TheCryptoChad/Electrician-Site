@@ -22,7 +22,7 @@ export default function Page() {
 
 			<Separator className='w-5/6 bg-black' />
 
-			<h1 className='text-4xl'>Our Work In Action</h1>
+			<h1 className='text-4xl font-bold'>Our Work In Action</h1>
 
 			<div className='flex flex-col items-center gap-10 w-full'>
 			{Object.values(serviceDetails).map((service) => (
