@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const phoneNumber = '(210) 838-8117';
 
 export const email = 'email@email.com';
@@ -16,6 +18,33 @@ export const services = [
 	'Service 7',
 	'Service 8',
 ];
+
+export const serviceDetails = {
+	'Service 1': {
+		title: 'Service 1',
+		description: 'This is a description of service 1.',
+		cost: '$100',
+		time: '1 hour',
+		type: 'Type 1',
+		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
+	},
+	'Service 2': {
+		title: 'Service 1',
+		description: 'This is a description of service 1.',
+		cost: '$100',
+		time: '1 hour',
+		type: 'Type 1',
+		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
+	},
+	'Service 3': {
+		title: 'Service 1',
+		description: 'This is a description of service 1.',
+		cost: '$100',
+		time: '1 hour',
+		type: 'Type 1',
+		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
+	}
+}
 
 export const socials = {
 	Instagram: 'https://www.instagram.com/',
