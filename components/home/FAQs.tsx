@@ -17,7 +17,7 @@ export default function FAQs() {
 				<p className='col-span-2 leading-5'>
 					Here you’ll find a compilation of the <b>most frequently asked questions.</b> If there’s something you want to
 					know which isn’t here, please send an email to{' '}
-					<span className='font-bold underline text-[#F7D7A7]'>
+					<span className='font-bold text-[#F7D7A7] underline'>
 						<Link href={`mailto:${email}`}>{email}!</Link>
 					</span>
 				</p>
@@ -27,7 +27,7 @@ export default function FAQs() {
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ut blanditiis alias commodi eum nemo earum
 						saepe, ad dignissimos rerum eaque voluptates necessitatibus velit veniam ratione accusamus autem repudiandae
 						fugit?{' '}
-						<span className='font-bold underline text-[#F7D7A7]'>
+						<span className='font-bold text-[#F7D7A7] underline'>
 							<Link href='/contact-us'>Click here.</Link>
 						</span>
 					</p>
@@ -52,9 +52,11 @@ export default function FAQs() {
 				</div>
 				<div className='col-span-3 flex items-center justify-center gap-4'>
 					<p>Have another question?</p>
-					<Button className='bg-header-button-gradient h-12 w-36 rounded-lg font-bold transition-transform duration-300 hover:scale-110'>
-						Contact Us
-					</Button>
+					<Link href='/contact-us'>
+						<Button className='bg-header-button-gradient h-12 w-36 rounded-lg font-bold transition-transform duration-300 hover:scale-110'>
+							Contact Us
+						</Button>
+					</Link>
 				</div>
 			</article>
 		</section>
