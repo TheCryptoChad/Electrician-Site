@@ -22,7 +22,7 @@ export default function Learning() {
 			</div>
 
 			<Link href='/learning-hub'>
-				<Button className='bg-header-button-gradient h-12 w-96 rounded-lg text-2xl font-bold transition-transform duration-300 hover:scale-110'>
+				<Button className='text-black bg-header-button-gradient h-12 w-96 rounded-lg text-2xl font-bold transition-transform duration-300 hover:scale-110'>
 					Explore Our Learning Hub
 				</Button>
 			</Link>

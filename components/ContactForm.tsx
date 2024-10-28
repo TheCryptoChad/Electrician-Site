@@ -42,7 +42,7 @@ export default function ContactForm() {
 					placeholder='Message'
 				/>
 				<Button
-					className='w-2/3 absolute left-1/2 -translate-x-[50%] -bottom-6 hover:bg-header-button-gradient-hover bg-header-button-gradient h-12 border border-black text-black'
+					className='w-2/3 absolute left-1/2 -translate-x-[50%] -bottom-6 text-xl font-extrabold hover:bg-header-button-gradient-hover bg-header-button-gradient h-12 border border-black text-black'
 					type='submit'
 				>
 					Send Message
