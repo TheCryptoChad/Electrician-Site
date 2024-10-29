@@ -15,6 +15,7 @@ const config: Config = {
 			'header-button-gradient-hover': 'linear-gradient(87.06deg, #E0BF8F 0%, #D5B27E 51.09%, #C6A16A 99.37%)',
 			'highlighted-gradient': 'linear-gradient(89.7deg, #EC4F42 0.24%, #E22C58 99.74%)',
 			'faqs-radial-gradient': 'radial-gradient(circle at 15% 15%, rgba(80, 80, 140) 0%, #13192C 60%)',
+			'drawer-gradient': 'linear-gradient(270deg, rgba(11, 26, 33, 0.75) 0%, rgba(53, 68, 76, 0.75) 100%)',
 		},
   		colors: {
   			background: 'hsl(var(--background))',

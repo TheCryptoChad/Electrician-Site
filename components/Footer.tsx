@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import { Button } from './ui/button';
 import Image from 'next/image';
 import { Separator } from './ui/separator';
-import { address, companyName, email, phoneNumber, socials } from '@/lib/constants';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
 import ContactForm from './ContactForm';
+import { address, companyName, email, phoneNumber, socials } from '@/lib/constants';
 
 export default function Footer() {
 	return (
