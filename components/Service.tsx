@@ -20,7 +20,7 @@ export default function Service(props: Props) {
 				<h2 className='text-3xl font-extrabold lg:hidden'>{props.title}</h2>
 
 				<Carousel
-					className='h-full w-96 max-lg:h-[60vh] max-lg:w-full'
+					className='h-full w-96 max-lg:h-[50vh] max-lg:w-full'
 					opts={{ loop: true }}
 					plugins={[
 						Autoplay({
@@ -33,7 +33,7 @@ export default function Service(props: Props) {
 						{props.images?.map((image: string) => (
 							<CarouselItem
 								key={image}
-								className='h-80 w-full border max-lg:h-[60vh]'
+								className='h-80 w-full border max-lg:h-[50vh]'
 							>
 								<Image
 									alt={props.title}
@@ -53,7 +53,7 @@ export default function Service(props: Props) {
 
 				<p className='text-[#54595F]'>{props.description}</p>
 
-				<div className='flex w-full flex-col gap-5 bg-[#F1F1F1] p-8 pr-4 max-lg:h-[40vh]'>
+				<div className='flex w-full flex-col gap-5 bg-[#F1F1F1] p-8 pr-4 max-lg:h-[35vh]'>
 					<h2 className='w-full text-start text-2xl font-bold text-[#F7D7A7]'>SERVICE DETAILS</h2>
 
 					<div className='grid grid-cols-2 gap-5 text-nowrap'>

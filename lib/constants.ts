@@ -1,4 +1,4 @@
-import { title } from "process";
+import { title } from 'process';
 
 export const phoneNumber = '(210) 838-8117';
 
@@ -26,24 +26,24 @@ export const serviceDetails = {
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
+		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
 	},
 	'Service 2': {
-		title: 'Service 1',
-		description: 'This is a description of service 1.',
+		title: 'Service 2',
+		description: 'This is a description of service 2.',
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
+		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
 	},
 	'Service 3': {
-		title: 'Service 1',
-		description: 'This is a description of service 1.',
+		title: 'Service 3',
+		description: 'This is a description of service 3.',
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/home-route-hero.jpg']
-	}
+		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
+	},
 } as const;
 
 export const servicePages = {

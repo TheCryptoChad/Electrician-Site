@@ -16,7 +16,7 @@ export default function Footer() {
 			/>
 			<div className='absolute inset-0 -z-10 bg-blue-900 opacity-50 mix-blend-multiply'></div>
 
-			<section className='flex size-[96%] flex-col items-center justify-end gap-20 border border-[#F7D7A7] pb-10'>
+			<section className='flex size-[96%] flex-col items-center justify-end gap-20 border-[#F7D7A7] pb-10 lg:border'>
 				<div className='flex items-center gap-5 max-lg:flex-col lg:justify-evenly'>
 					<div className='flex flex-col justify-between gap-5 max-lg:px-5 lg:w-2/5 lg:gap-8'>
 						<div className='flex items-center gap-5'>

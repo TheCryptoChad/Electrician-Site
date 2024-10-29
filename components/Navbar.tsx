@@ -72,7 +72,7 @@ export default function Navbar() {
 			</NavigationMenu>
 
 			<Drawer>
-				<DrawerTrigger className='bg-header-gradient fixed right-14 z-50 rounded-full p-2 lg:hidden'>
+				<DrawerTrigger className='bg-header-gradient fixed right-10 z-50 rounded-full p-2 lg:hidden'>
 					<Image
 						alt='Menu'
 						height={25}
