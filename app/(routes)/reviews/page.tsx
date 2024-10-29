@@ -8,7 +8,7 @@ import Service from '@/components/Service';
 
 export default function Page() {
 	return (
-		<section className='flex flex-col items-center justify-center gap-10 py-20'>
+		<section className='flex flex-col w-full items-center justify-center gap-10 py-20'>
 			<div className='w-4/5'>
 				<script
 					src='https://static.elfsight.com/platform/platform.js'
@@ -24,7 +24,7 @@ export default function Page() {
 
 			<h1 className='text-4xl font-bold'>Our Work In Action</h1>
 
-			<div className='flex flex-col items-center gap-10 w-full'>
+			<div className='flex flex-col items-center gap-20 w-full'>
 			{Object.values(serviceDetails).map((service) => (
 				<Service
 					key={service.title}

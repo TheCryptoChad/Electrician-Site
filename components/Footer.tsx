@@ -18,7 +18,7 @@ export default function Footer() {
 
 			<section className='flex size-[96%] flex-col items-center justify-end gap-20 border border-[#F7D7A7] pb-10'>
 				<div className='flex items-center gap-5 max-lg:flex-col lg:justify-evenly'>
-					<div className='flex flex-col justify-between gap-5 max-lg:pl-5 lg:w-2/5 lg:gap-8'>
+					<div className='flex flex-col justify-between gap-5 max-lg:px-5 lg:w-2/5 lg:gap-8'>
 						<div className='flex items-center gap-5'>
 							<Separator className='w-12 bg-[#F7D7A7]' />
 							<h2 className='flex-1 whitespace-nowrap font-bold text-[#F7D7A7] lg:text-xl'>{companyName}</h2>
