@@ -73,7 +73,7 @@ export default function AboutUs() {
 						</p>
 					</div>
 
-					<div className='Lg:ml-20 flex items-center gap-2'>
+					<div className='lg:ml-20 flex items-center gap-2'>
 						<h1 className='text-4xl font-extrabold text-[#F7D7A7] lg:text-9xl'>32,876,449</h1>
 						<p className='text-sm font-bold lg:text-lg'>
 							Nails Used*

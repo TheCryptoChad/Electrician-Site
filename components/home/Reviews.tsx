@@ -41,7 +41,7 @@ export default function Reviews() {
 				</div>
 			</div>
 
-			<div className='relative w-screen lg:w-[90vw] bg-[#13192C] text-white'>
+			<div className='relative w-screen bg-[#13192C] text-white lg:w-[90vw]'>
 				<div className='bg-header-button-gradient absolute left-1/2 top-0 flex h-40 w-4/5 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 py-5'>
 					<div className='flex items-center gap-2'>
 						{stars.map((_, index: number) => {
@@ -102,11 +102,11 @@ export default function Reviews() {
 					/>
 
 					<div className='z-20 flex w-1/2 flex-col'>
-						<h2 className='text-xl font-extrabold lg:text-2xl'>
+						<h2 className='text-xl font-extrabold max-lg:text-nowrap lg:text-2xl'>
 							<span className='text-[#F7D7A7]'>5 REASONS</span> TO GET A
 						</h2>
 
-						<h1 className='text-4xl font-extrabold lg:text-6xl'>Service Name</h1>
+						<h1 className='text-4xl font-extrabold max-lg:text-nowrap lg:text-6xl'>Service Name</h1>
 
 						<Separator className='mt-2 w-2/3 bg-white lg:mt-5' />
 					</div>
