@@ -1,14 +1,15 @@
-import ContactForm from '@/components/ContactForm';
+import { Metadata } from 'next';
 import { Separator } from '@/components/ui/separator';
-import { companyName, phoneNumber, email, address, socials, serviceDetails } from '@/lib/constants';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { companyName, serviceDetails } from '@/lib/constants';
 import Service from '@/components/Service';
+
+export const metadata: Metadata = {
+	title: `Reviews | ${companyName}`,
+};
 
 export default function Page() {
 	return (
-		<section className='flex flex-col w-full items-center justify-center gap-10 py-20'>
+		<section className='flex w-full flex-col items-center justify-center gap-10 py-20'>
 			<div className='w-4/5'>
 				<script
 					src='https://static.elfsight.com/platform/platform.js'
@@ -24,18 +25,18 @@ export default function Page() {
 
 			<h1 className='text-4xl font-bold'>Our Work In Action</h1>
 
-			<div className='flex flex-col items-center gap-20 w-full'>
-			{Object.values(serviceDetails).map((service) => (
-				<Service
-					key={service.title}
-					title={service.title}
-					description={service.description}
-					images={service.images}
-					cost={service.cost}
-					time={service.time}
-					type={service.type}
-				/>
-			))}
+			<div className='flex w-full flex-col items-center gap-20'>
+				{Object.values(serviceDetails).map((service) => (
+					<Service
+						key={service.title}
+						title={service.title}
+						description={service.description}
+						images={service.images}
+						cost={service.cost}
+						time={service.time}
+						type={service.type}
+					/>
+				))}
 			</div>
 		</section>
 	);

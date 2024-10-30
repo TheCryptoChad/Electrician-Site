@@ -1,7 +1,12 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
-import { phoneNumber, email, address } from '@/lib/constants';
+import { phoneNumber, email, address, companyName } from '@/lib/constants';
+
+export const metadata: Metadata = {
+	title: `Contact Us | ${companyName}`,
+};
 
 export default function Page() {
 	return (

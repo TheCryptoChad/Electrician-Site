@@ -1,6 +1,11 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { socials } from '@/lib/constants';
+import { companyName, socials } from '@/lib/constants';
+
+export const metadata: Metadata = {
+	title: `Learning Hub | ${companyName}`,
+};
 
 export default function Page() {
 	return (

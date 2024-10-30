@@ -1,11 +1,21 @@
 import { PageProps } from '@/.next/types/app/page';
-import { servicePages } from '@/lib/constants';
+import { companyName, servicePages } from '@/lib/constants';
+import { Metadata } from 'next';
 
 type Props = PageProps & {
 	params: {
 		service: string;
 	};
 };
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+	const service: keyof typeof servicePages = (await props.params).service
+		.split('-')
+		.map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(' ') as keyof typeof servicePages;
+
+	return { title: `${service} | ${companyName}` };
+}
 
 export default async function Page(props: Props) {
 	const service: keyof typeof servicePages = (await props.params).service
