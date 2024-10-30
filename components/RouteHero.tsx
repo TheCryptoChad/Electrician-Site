@@ -26,7 +26,7 @@ export default function RouteHero() {
 				alt='Hero'
 				className='absolute -z-10 flex size-full items-center justify-center object-cover object-top'
 				height={50}
-				src='/images/route-hero.jpg'
+				src='/images/route-hero.webp'
 				width={1080}
 			/>
 			<div className='absolute -z-10 size-full bg-gradient-to-t from-transparent to-[#13192C]'></div>

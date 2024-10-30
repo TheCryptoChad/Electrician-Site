@@ -12,14 +12,14 @@ export default function AboutUs() {
 				alt='Hero'
 				className='absolute top-0 -z-20 h-1/2 w-full'
 				height={50}
-				src='/images/route-hero.jpg'
+				src='/images/route-hero.webp'
 				width={1080}
 			/>
 			<Image
 				alt='Hero'
 				className='absolute top-1/2 -z-20 h-1/2 w-full lg:h-2/5'
 				height={50}
-				src='/images/route-hero.jpg'
+				src='/images/route-hero.webp'
 				width={1080}
 			/>
 
@@ -73,7 +73,7 @@ export default function AboutUs() {
 						</p>
 					</div>
 
-					<div className='lg:ml-20 flex items-center gap-2'>
+					<div className='flex items-center gap-2 lg:ml-20'>
 						<h1 className='text-4xl font-extrabold text-[#F7D7A7] lg:text-9xl'>32,876,449</h1>
 						<p className='text-sm font-bold lg:text-lg'>
 							Nails Used*

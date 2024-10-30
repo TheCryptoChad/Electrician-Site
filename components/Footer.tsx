@@ -11,7 +11,7 @@ export default function Footer() {
 				alt='Footer'
 				className='absolute -z-10 flex size-full items-center justify-center'
 				height={200}
-				src='/images/footer.jpg'
+				src='/images/footer.webp'
 				width={1080}
 			/>
 			<div className='absolute inset-0 -z-10 bg-blue-900 opacity-50 mix-blend-multiply'></div>

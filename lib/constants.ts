@@ -26,7 +26,7 @@ export const serviceDetails = {
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
+		images: ['/images/home-hero.webp', '/images/route-hero.webp'],
 	},
 	'Service 2': {
 		title: 'Service 2',
@@ -34,7 +34,7 @@ export const serviceDetails = {
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
+		images: ['/images/home-hero.webp', '/images/route-hero.webp'],
 	},
 	'Service 3': {
 		title: 'Service 3',
@@ -42,7 +42,7 @@ export const serviceDetails = {
 		cost: '$100',
 		time: '1 hour',
 		type: 'Type 1',
-		images: ['/images/home-hero.jpg', '/images/route-hero.jpg'],
+		images: ['/images/home-hero.webp', '/images/route-hero.webp'],
 	},
 } as const;
 
@@ -103,19 +103,19 @@ export const serviceSteps = {
 			title: 'Step Name',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 2': {
 			title: 'Step Name 2',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 3': {
 			title: 'Step Name 3',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 	},
 	'Service 2': {
@@ -123,19 +123,19 @@ export const serviceSteps = {
 			title: 'Step Name',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 2': {
 			title: 'Step Name 2',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 3': {
 			title: 'Step Name 3',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 	},
 	'Service 3': {
@@ -143,19 +143,19 @@ export const serviceSteps = {
 			title: 'Step Name',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 2': {
 			title: 'Step Name 2',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 		'Step Name 3': {
 			title: 'Step Name 3',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
+			image: '/images/home-hero.webp',
 		},
 	},
 } as const;

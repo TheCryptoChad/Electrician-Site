@@ -12,7 +12,7 @@ export default function HomeHero() {
 				alt='Hero'
 				className='absolute -z-10 flex size-full items-center justify-center'
 				height={50}
-				src='/images/home-hero.jpg'
+				src='/images/home-hero.webp'
 				width={1080}
 			/>
 
