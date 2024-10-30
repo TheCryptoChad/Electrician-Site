@@ -1,6 +1,6 @@
-import { companyName } from '@/lib/constants';
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
+import { companyName } from '@/lib/constants';
 
 export default function AboutUs() {
 	return (
@@ -23,12 +23,13 @@ export default function AboutUs() {
 				width={1080}
 			/>
 
-			<div className='relative grid w-3/5 gap-y-10 grid-cols-2 pt-10'>
-				<div className='absolute bottom-[48%] w-screen flex flex-col gap-5'>
+			<div className='relative grid w-3/5 grid-cols-2 gap-y-10 pt-10'>
+				<div className='absolute bottom-[48%] flex w-screen flex-col gap-5'>
 					<div className='flex items-center gap-2'>
 						<h1 className='text-9xl font-extrabold text-[#F7D7A7]'>10</h1>
 						<p className='text-lg font-bold'>
-							%<br /><br />
+							%<br />
+							<br />
 							Increase in
 							<br />
 							Property Value *
@@ -48,7 +49,8 @@ export default function AboutUs() {
 						<h1 className='text-9xl font-extrabold text-[#F7D7A7]'>32,876,449</h1>
 						<p className='text-lg font-bold'>
 							Nails Used*
-							<br /><br />
+							<br />
+							<br />
 							<span className='text-sm italic'>
 								*Guestimate.
 								<br />

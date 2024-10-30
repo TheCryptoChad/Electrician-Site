@@ -3,69 +3,7 @@
 import { useState } from 'react';
 import { Button } from './ui/button';
 import Image from 'next/image';
-
-const serviceSteps = {
-	'Service 1': {
-		'Step Name': {
-			title: 'Step Name',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 2': {
-			title: 'Step Name 2',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 3': {
-			title: 'Step Name 3',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-	},
-	'Service 2': {
-		'Step Name': {
-			title: 'Step Name',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 2': {
-			title: 'Step Name 2',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 3': {
-			title: 'Step Name 3',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-	},
-	'Service 3': {
-		'Step Name': {
-			title: 'Step Name',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 2': {
-			title: 'Step Name 2',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-		'Step Name 3': {
-			title: 'Step Name 3',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
-			image: '/images/home-hero.jpg',
-		},
-	},
-} as const;
+import { serviceSteps } from '@/lib/constants';
 
 type Service = keyof typeof serviceSteps;
 type Step = keyof (typeof serviceSteps)[Service];
@@ -112,7 +50,7 @@ export default function ServiceDisplay() {
 				))}
 			</div>
 
-			<div className='relative flex h-[120%] w-[90%] flex-col justify-end gap-2 px-4 pb-2 pt-28 lg:h-full lg:w-2/3 lg:gap-5 lg:px-16 lg:pb-12'>
+			<div className='relative flex h-[120%] w-[90%] flex-col justify-end gap-2 px-4 pb-2 pt-64 lg:h-full lg:w-2/3 lg:gap-5 lg:px-16 lg:pb-12'>
 				<Image
 					alt={selectedStep}
 					className='absolute left-0 top-0 -z-10 size-full rounded-xl lg:left-[5%] lg:top-[5%] lg:size-[90%]'

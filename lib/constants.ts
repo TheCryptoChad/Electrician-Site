@@ -97,6 +97,69 @@ export const servicePages = {
 	},
 } as const;
 
+export const serviceSteps = {
+	'Service 1': {
+		'Step Name': {
+			title: 'Step Name',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 2': {
+			title: 'Step Name 2',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 3': {
+			title: 'Step Name 3',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+	},
+	'Service 2': {
+		'Step Name': {
+			title: 'Step Name',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 2': {
+			title: 'Step Name 2',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 3': {
+			title: 'Step Name 3',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+	},
+	'Service 3': {
+		'Step Name': {
+			title: 'Step Name',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 2': {
+			title: 'Step Name 2',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+		'Step Name 3': {
+			title: 'Step Name 3',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque enim recusandae, aperiam dicta modi similique! Laborum, magnam pariatur? Deleniti nostrum dolorum nemo nam quis maiores tempore non ea soluta?',
+			image: '/images/home-hero.jpg',
+		},
+	},
+} as const;
+
 export const socials = {
 	Instagram: 'https://www.instagram.com/',
 	Facebook: 'https://www.facebook.com/',

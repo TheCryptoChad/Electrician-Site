@@ -41,7 +41,7 @@ export default function Reviews() {
 				</div>
 			</div>
 
-			<div className='relative w-[90vw] bg-[#13192C] text-white'>
+			<div className='relative w-screen lg:w-[90vw] bg-[#13192C] text-white'>
 				<div className='bg-header-button-gradient absolute left-1/2 top-0 flex h-40 w-4/5 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 py-5'>
 					<div className='flex items-center gap-2'>
 						{stars.map((_, index: number) => {
