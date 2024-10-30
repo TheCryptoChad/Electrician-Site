@@ -7,11 +7,11 @@ import Learning from '@/components/home/Learning';
 
 export default function Home() {
 	return (
-		<main>
+		<main className='overflow-x-hidden'>
 			<HomeHero />
 			<Reviews />
-			<OurProcess />
-			{/* <AboutUs /> */}
+			{/* <OurProcess /> */}
+			<AboutUs />
 			<FAQs />
 			<Learning />
 		</main>

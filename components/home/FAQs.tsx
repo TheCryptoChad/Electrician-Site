@@ -5,7 +5,7 @@ import { email } from '@/lib/constants';
 
 export default function FAQs() {
 	return (
-		<section className='flex justify-center py-20 text-white'>
+		<section className='flex justify-center pb-20 lg:py-20 text-white'>
 			<article className='bg-faqs-radial-gradient flex w-screen grid-cols-3 flex-col gap-5 px-8 py-20 lg:grid lg:w-[90vw] lg:gap-16 lg:rounded-xl lg:px-32'>
 				<div className='flex items-center gap-7 max-lg:flex-col'>
 					<h1 className='text-4xl font-extrabold text-[#F7D7A7] max-lg:w-full lg:text-7xl'>FAQs</h1>{' '}
