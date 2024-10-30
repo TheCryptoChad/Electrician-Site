@@ -94,13 +94,15 @@ export default function Navbar() {
 							className='text-xl font-extrabold text-white hover:text-[#F7D7A7]'
 							href={route}
 						>
-							{route === '/'
-								? 'Home'
-								: route
-										.slice(1)
-										.split('-')
-										.map((str) => str.charAt(0).toUpperCase() + str.slice(1))
-										.join(' ')}
+							<DrawerClose>
+								{route === '/'
+									? 'Home'
+									: route
+											.slice(1)
+											.split('-')
+											.map((str) => str.charAt(0).toUpperCase() + str.slice(1))
+											.join(' ')}
+							</DrawerClose>
 						</Link>
 					))}
 				</DrawerContent>
