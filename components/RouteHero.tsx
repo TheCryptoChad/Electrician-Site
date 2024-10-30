@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import {
@@ -39,8 +38,11 @@ export default function RouteHero() {
 				<Breadcrumb>
 					<BreadcrumbList className='text-lg font-bold text-white'>
 						<BreadcrumbItem>
-							<BreadcrumbLink className='hover:text-white'>
-								<Link href='/'>Home</Link>
+							<BreadcrumbLink
+								className='hover:text-white'
+								href='/'
+							>
+								Home
 							</BreadcrumbLink>
 						</BreadcrumbItem>
 

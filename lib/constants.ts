@@ -160,6 +160,8 @@ export const serviceSteps = {
 	},
 } as const;
 
+export const routes = ['/', '/reviews', '/financing', '/learning-hub', '/contact-us'];
+
 export const socials = {
 	Instagram: 'https://www.instagram.com/',
 	Facebook: 'https://www.facebook.com/',

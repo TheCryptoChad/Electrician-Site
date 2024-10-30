@@ -28,7 +28,7 @@ export default function HomeHero() {
 					<h1 className='text-4xl font-extrabold leading-snug text-white lg:text-6xl'>
 						Protecting what
 						<br />
-						matters <span className='bg-highlighted-gradient px-2'>the most</span>
+						matters <span className='bg-highlighted-gradient px-2 leading-snug'>the most</span>
 					</h1>
 
 					<p className='text-white max-lg:w-1/2 lg:text-lg'>

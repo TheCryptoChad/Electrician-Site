@@ -7,8 +7,8 @@ type Props = PageProps & {
 	};
 };
 
-export default function Page(props: Props) {
-	const service: keyof typeof servicePages = props.params.service
+export default async function Page(props: Props) {
+	const service: keyof typeof servicePages = (await props.params).service
 		.split('-')
 		.map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
 		.join(' ') as keyof typeof servicePages;

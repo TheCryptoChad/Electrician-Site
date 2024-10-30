@@ -10,8 +10,7 @@ import {
 } from './ui/navigation-menu';
 import { Drawer, DrawerClose, DrawerContent, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer';
 import { Separator } from './ui/separator';
-import { services } from '@/lib/constants';
-const routes = ['/', '/reviews', '/financing', '/learning-hub', '/contact-us'];
+import { routes, services } from '@/lib/constants';
 
 export default function Navbar() {
 	return (
@@ -53,19 +52,13 @@ export default function Navbar() {
 
 					{routes.slice(1).map((route) => (
 						<NavigationMenuItem key={route}>
-							<Link
-								href={route}
-								legacyBehavior
-								passHref
-							>
-								<NavigationMenuLink>
-									{route
-										.slice(1)
-										.split('-')
-										.map((str) => str.charAt(0).toUpperCase() + str.slice(1))
-										.join(' ')}
-								</NavigationMenuLink>
-							</Link>
+							<NavigationMenuLink href={route}>
+								{route
+									.slice(1)
+									.split('-')
+									.map((str) => str.charAt(0).toUpperCase() + str.slice(1))
+									.join(' ')}
+							</NavigationMenuLink>
 						</NavigationMenuItem>
 					))}
 				</NavigationMenuList>
